@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useHistory } from 'react-router-dom'
+import UsersList from '../users-list'
 
 import './favorite-users.css'
-import { useHistory } from 'react-router-dom'
-import { View } from '../users-list/users-list'
 
 const FavoriteUsers = ({ handleToggleFavorite }) => {
 	const usersRaw = localStorage.getItem('usersFavorite')
@@ -16,7 +16,7 @@ const FavoriteUsers = ({ handleToggleFavorite }) => {
 
 	return (
 		<div className="d-flex justify-content-around flex-wrap">
-			<View
+			<UsersList
 				users={users}
 				handleClick={handleClick}
 				handleToggleFavorite={handleToggleFavorite}
