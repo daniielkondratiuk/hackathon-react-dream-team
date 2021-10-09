@@ -22,7 +22,7 @@ const View = ({users, handleClick}) => users.map(user=> {
 				<div className="card-body">
 					<h5 className="card-title">{user.firstName} {user.lastName}</h5>
 				</div>
-				<button onClick={()=>handleClick(user._id)} className="btn btn-primary d-block w-100">View Profile</button>
+					<button onClick={()=>handleClick(user._id)} className="btn btn-primary d-block w-100">View Profile</button>
 				<div className='d-flex justify-content-around'>
 					<ol>
 						{user.skills.map(skill=><li key={skill}>{skill}</li>)}
