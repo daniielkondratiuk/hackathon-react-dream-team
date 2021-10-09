@@ -10,22 +10,63 @@ import './app.css'
 
 const App = () => {
 	const [users, setUsers] = useState(null)
+
 	useEffect(() => {
 		api.getAllUsers().then(setUsers)
 	}, [users])
+
+	if (!localStorage.getItem('usersFavorite')) {
+		localStorage.setItem('usersFavorite', JSON.stringify([]))
+	}
+	const handleToggleFavorite = (id) => {
+		setUsers(
+			users.filter((user) => {
+				if (user._id === id) {
+					user.favorite = !user.favorite
+				}
+				return user
+			})
+		)
+		const usersFavoriteRaw = localStorage.getItem('usersFavorite')
+		let usersFavorite = JSON.parse(usersFavoriteRaw)
+		users.map((user) => {
+			if (user.favorite === true) {
+				if (usersFavorite._id !== id) {
+					usersFavorite = [...usersFavorite, user]
+				}
+			}
+			usersFavorite.filter(user => user.favorite !== false)
+			return localStorage.setItem(
+				'usersFavorite',
+				JSON.stringify(usersFavorite)
+			)
+		})
+	}
 	if (!users) return null
 	return (
 		<>
 			<Router>
 				<Navbar />
 				<Switch>
-					<Route path="/" exact render={() => <UsersList users={users} />} />
+					<Route
+						path="/"
+						exact
+						render={() => (
+							<UsersList
+								users={users}
+								handleToggleFavorite={handleToggleFavorite}
+							/>
+						)}
+					/>
+					<Route path="/favorite-users" exact render={() => (
+						<FavoriteUsers
+							handleToggleFavorite={handleToggleFavorite}
+						/>)} />
 					<Route
 						path="/:userId"
 						exact
 						render={(props) => <User users={users} {...props} />}
 					/>
-					<Route path="/favorite-users" exact component={FavoriteUsers} />
 				</Switch>
 			</Router>
 		</>

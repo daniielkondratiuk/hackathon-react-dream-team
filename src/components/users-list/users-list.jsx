@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { PropTypes } from 'prop-types'
 import { useHistory } from 'react-router-dom'
 
 import './users-list.css'
 
-const UsersList = ({ users }) => {
-	const [favorite, setFavorite] = useState(false)
+const UsersList = ({ users, handleToggleFavorite }) => {
 	const history = useHistory()
 	const handleClick = (id) => {
 		history.push(id)
@@ -16,23 +15,22 @@ const UsersList = ({ users }) => {
 			<View
 				users={users}
 				handleClick={handleClick}
-				favorite={favorite}
-				setFavorite={setFavorite}
+				handleToggleFavorite={handleToggleFavorite}
 			/>
 		</div>
 	)
 }
 
-const View = ({ users, handleClick, favorite, setFavorite }) =>
+export const View = ({ users, handleClick, handleToggleFavorite }) =>
 	users.map((user) => {
 		return (
 			<div key={user._id} className="card my-2 position-relative">
 				<img className="card-img-top" src={user.avatar} alt="Card ok cap" />
 				<button
-					onClick={() => setFavorite(!favorite)}
+					onClick={() => handleToggleFavorite(user._id)}
 					className="btn btn-warning position-absolute end-0"
 				>
-					{favorite ? <i className="bi bi-star-fill"/> : <i className="bi bi-star"/>}
+					{user.favorite ? (<i className="bi bi-star-fill" />) : (<i className="bi bi-star" />)}
 				</button>
 				<div className="card-body">
 					<h5 className="card-title">
@@ -62,7 +60,8 @@ const View = ({ users, handleClick, favorite, setFavorite }) =>
 	})
 
 UsersList.propTypes = {
-	users: PropTypes.array.isRequired
+	users: PropTypes.array.isRequired,
+	handleToggleFavorite: PropTypes.func.isRequired
 }
 
 export default UsersList
