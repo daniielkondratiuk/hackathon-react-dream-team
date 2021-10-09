@@ -20,7 +20,7 @@ const users = [
 		lastName: 'Schermann',
 		about: 'Lorem ipsum',
 		age: 16,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: 'https://picsum.photos/300/300',
 		socials: [
 			{
 				name: 'GitHub',
