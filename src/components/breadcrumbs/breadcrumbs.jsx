@@ -13,11 +13,12 @@ const Breadcrumbs = () => {
 		<nav aria-label="breadcrumb">
 			<ol className="breadcrumb ms-2 mt-2">
 				<li className="breadcrumb-item">
-					<Link to="/">Home</Link>
+					<Link to="/">Главная</Link>
 				</li>
 				{pathnames.map((name, index) => {
 					const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`
 					const isLast = index === pathnames.length - 1
+					if (name === 'favorite-users') name = 'Избранные'
 					return (
 						<li key={index} className="breadcrumb-item word text-nowrap">
 							{isLast ? <p>{name}</p> : <Link to={routeTo}>{name}</Link>}
