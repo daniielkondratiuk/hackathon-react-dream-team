@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch,
+	Redirect
+} from 'react-router-dom'
 import api from '../../api'
 import UsersList from '../users-list'
 import Navbar from '../navbar'
 import FavoriteUsers from '../favorite-users'
 import User from '../user'
+import Breadcrumbs from '../breadcrumbs'
 
 import './app.css'
 
@@ -47,6 +53,7 @@ const App = () => {
 		<>
 			<Router>
 				<Navbar />
+				<Breadcrumbs />
 				<Switch>
 					<Route
 						path="/"
@@ -67,6 +74,7 @@ const App = () => {
 						exact
 						render={(props) => <User users={users} {...props} />}
 					/>
+					<Redirect to="/" />
 				</Switch>
 			</Router>
 		</>

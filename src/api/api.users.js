@@ -1,3 +1,16 @@
+const role = {
+	teamLead: {
+		_id: '1',
+		name: 'Тимлид',
+		color: 'danger'
+	},
+	frontend: {
+		_id: '2',
+		name: 'Front-end разработчик',
+		color: 'primary'
+	}
+}
+
 const users = [
 	{
 		_id: '1',
@@ -5,6 +18,7 @@ const users = [
 		lastName: 'Kondratiuk',
 		about: 'Lorem ipsum',
 		age: 26,
+		role: role.teamLead,
 		avatar: 'https://picsum.photos/250/200',
 		socials: [
 			{
@@ -21,6 +35,7 @@ const users = [
 		lastName: 'Schermann',
 		about: 'Lorem ipsum',
 		age: 16,
+		role: role.frontend,
 		avatar: 'https://picsum.photos/250/200',
 		socials: [
 			{
@@ -37,6 +52,7 @@ const users = [
 		lastName: 'Monet',
 		about: 'Lorem ipsum',
 		age: 36,
+		role: role.frontend,
 		avatar: 'https://picsum.photos/250/200',
 		socials: [
 			{
@@ -53,6 +69,7 @@ const users = [
 		lastName: 'Defo',
 		about: 'Lorem ipsum',
 		age: 69,
+		role: role.frontend,
 		avatar: 'https://picsum.photos/250/200',
 		socials: [
 			{
@@ -66,9 +83,10 @@ const users = [
 	{
 		_id: '5',
 		firstName: 'Ilya',
-		lastName: 'Mendeleev',
+		lastName: 'Targaev',
 		about: 'Lorem ipsum',
-		age: 43,
+		age: 26,
+		role: role.frontend,
 		avatar: 'https://picsum.photos/250/200',
 		socials: [
 			{

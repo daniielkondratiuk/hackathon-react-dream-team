@@ -5,7 +5,7 @@ import './navbar.css'
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-light">
+		<nav className="navbar navbar-expand navbar-light bg-light">
 			<div className="collapse navbar-collapse">
 				<ul className="navbar-nav">
 					<li className="nav-item active">

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import api from '../../api'
+import Badge from '../badge'
 
 const User = ({ users, match }) => {
 	const [user, setUser] = useState(null)
@@ -11,7 +12,10 @@ const User = ({ users, match }) => {
 		api.getUserById(userId).then(setUser)
 	}, [user])
 	if (!user) return null
-	return <h1>{user.firstName}</h1>
+	return		<>
+		<h1>{user.firstName}</h1>
+		<Badge role={user.role} />
+	</>
 }
 
 User.propTypes = {
