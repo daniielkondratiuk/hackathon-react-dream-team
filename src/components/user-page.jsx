@@ -3,7 +3,6 @@ import style from './users-list.module.css';
 import Progress from "./progress";
 
 const UserPage = ({user}) => {
-    console.log(user.skills)
     return <>
         <div className={style.item}>
             <div className={style.itemFirst}>
@@ -27,7 +26,7 @@ const UserPage = ({user}) => {
                 </p>
                 <h3>I wanna tell you about my skills</h3>
                 <ul className={style.elements}>
-                    {user.skills.map(skill => <li key={skill} className={style.element}><Progress name={skill}/></li>)}
+                    {user.skills.map(skill => <li key={skill.name} className={style.element}><Progress skill={skill}/></li>)}
                 </ul>
             </div>
         </div>

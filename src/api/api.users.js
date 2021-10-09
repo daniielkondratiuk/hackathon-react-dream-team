@@ -12,7 +12,13 @@ const users = [
 				link: '',
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+			skills: [
+        		{ name: 'HTML', percent: 75},
+        		{ name: 'CSS', percent: 100},
+        		{ name: 'JavaScript', percent: 49},
+        		{ name: 'ReactJS', percent: 60},
+        		{ name: 'NodeJS', percent: 90}
+        		],
 	},
 	{
 		_id: '2',
@@ -27,8 +33,15 @@ const users = [
 				link: '',
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
-	},
+		skills: [
+                    { name: 'HTML', percent: 95},
+                    { name: 'CSS', percent: 75},
+                    { name: 'JavaScript', percent: 80},
+                    { name: 'ReactJS', percent: 75},
+                    { name: 'NodeJS', percent: 20}
+            	],
+    },
+
 	{
 		_id: '3',
 		firstName: 'Denis',
@@ -42,7 +55,13 @@ const users = [
 				link: '',
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+			skills: [
+                		{ name: 'HTML', percent: 75},
+                		{ name: 'CSS', percent: 100},
+                		{ name: 'JavaScript', percent: 49},
+                		{ name: 'ReactJS', percent: 60},
+                		{ name: 'NodeJS', percent: 90}
+                    ],
 	},
 	{
 		_id: '4',
@@ -57,7 +76,13 @@ const users = [
 				link: '',
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+            skills: [
+                        { name: 'HTML', percent: 75},
+                        { name: 'CSS', percent: 100},
+                        { name: 'JavaScript', percent: 49},
+                        { name: 'ReactJS', percent: 60},
+                        { name: 'NodeJS', percent: 90}
+                    ],
 	},
 	{
 		_id: '5',
@@ -72,7 +97,13 @@ const users = [
 				link: '',
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+        skills: [
+                    { name: 'HTML', percent: 95},
+                    { name: 'CSS', percent: 30},
+                    { name: 'JavaScript', percent: 49},
+                    { name: 'ReactJS', percent: 75},
+                    { name: 'NodeJS', percent: 10}
+                ],
 	},
 ]
 

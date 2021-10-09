@@ -1,7 +1,11 @@
 import React from "react";
 import style from './progress.module.css'
 
-const Progress = ({name}) => {
+const Progress = ({skill}) => {
+    const strokeDasharray = 250
+    const setProgress = () => {
+        return strokeDasharray * (100 - skill.percent)/ 100
+    }
     return <>
         <div className={style.skillRow}>
             <svg viewBox="0 0 100 100" className={style.skillShape}>
@@ -14,11 +18,12 @@ const Progress = ({name}) => {
                 <circle cx="50" cy="50" r="40" transform="rotate(180 50 50)"
                         className={style.skillCircleUnder}
                         stroke="url(#linear-gradient)"
-                        strokeDashoffset = "160"
+                        strokeDasharray={strokeDasharray}
+                        strokeDashoffset={setProgress()}
                 >
                 </circle>
             </svg>
-            <div className={style.skillTitle}>{name}</div>
+            <div className={style.skillTitle}>{skill.name}</div>
         </div>
     </>
 }
