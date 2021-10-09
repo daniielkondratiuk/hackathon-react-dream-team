@@ -5,6 +5,7 @@ import UsersList from '../users-list'
 import Navbar from '../navbar'
 import FavoriteUsers from '../favorite-users'
 import User from '../user'
+import Breadcrumbs from '../breadcrumbs'
 
 import './app.css'
 
@@ -18,6 +19,7 @@ const App = () => {
 		<>
 			<Router>
 				<Navbar />
+				<Breadcrumbs />
 				<Switch>
 					<Route path="/" exact render={() => <UsersList users={users} />} />
 					<Route
