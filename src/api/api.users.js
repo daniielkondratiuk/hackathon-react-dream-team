@@ -26,7 +26,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS'],
+		favorite: false
 	},
 	{
 		_id: '2',
@@ -42,7 +43,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS'],
+		favorite: false
 	},
 	{
 		_id: '3',
@@ -58,7 +60,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS'],
+		favorite: false
 	},
 	{
 		_id: '4',
@@ -74,7 +77,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS'],
+		favorite: false
 	},
 	{
 		_id: '5',
@@ -90,10 +94,10 @@ const users = [
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS'],
+		favorite: false
 	}
 ]
-
 const getAllUsers = () =>
 	new Promise((resolve) => {
 		setTimeout(() => resolve(users), 300)
