@@ -1,5 +1,6 @@
-import users from './api.users'
+import { getAllUsers, getUserById } from './api.users'
 const API = {
-	users
+	getAllUsers,
+	getUserById
 }
 export default API

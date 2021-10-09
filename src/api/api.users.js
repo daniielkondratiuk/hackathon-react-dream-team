@@ -9,10 +9,10 @@ const users = [
 		socials: [
 			{
 				name: 'GitHub',
-				link: '',
+				link: ''
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
 	},
 	{
 		_id: '2',
@@ -24,10 +24,10 @@ const users = [
 		socials: [
 			{
 				name: 'GitHub',
-				link: '',
+				link: ''
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
 	},
 	{
 		_id: '3',
@@ -39,10 +39,10 @@ const users = [
 		socials: [
 			{
 				name: 'GitHub',
-				link: '',
+				link: ''
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
 	},
 	{
 		_id: '4',
@@ -54,10 +54,10 @@ const users = [
 		socials: [
 			{
 				name: 'GitHub',
-				link: '',
+				link: ''
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
 	},
 	{
 		_id: '5',
@@ -69,16 +69,20 @@ const users = [
 		socials: [
 			{
 				name: 'GitHub',
-				link: '',
+				link: ''
 			}
 		],
-		skills: ['HTML','CSS','JavaScript','ReactJS','NodeJS'],
-	},
+		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+	}
 ]
 
-const fetchAll = () =>
+const getAllUsers = () =>
 	new Promise((resolve) => {
 		setTimeout(() => resolve(users), 300)
 	})
+const getUserById = (id) =>
+	new Promise((resolve) => {
+		setTimeout(() => resolve(users.find((user) => user._id === id)), 300)
+	})
 
-export default fetchAll
+export { getAllUsers, getUserById }
