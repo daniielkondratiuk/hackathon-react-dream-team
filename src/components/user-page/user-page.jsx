@@ -18,10 +18,14 @@ const UserPage = ({ user }) => {
 						/>
 					</div>
 					<ul className={style.socialList}>
-						<li className={style.socialItem}>Git</li>
-						<li className={style.socialItem}>VK</li>
-						<li className={style.socialItem}>Facebook</li>
-						<li className={style.socialItem}>Insta</li>
+						{user.socials.map((social) => (
+							<li key={social.name} className="me-2 ">
+								<a href={social.url} className="text-decoration-none">
+									<i className={`bi bi-${social.name} me-1 `} />
+									<span>{social.name}</span>
+								</a>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className={style.itemSec}>
@@ -29,18 +33,12 @@ const UserPage = ({ user }) => {
 						My name is {user.firstName} {user.lastName}
 					</h2>
 					<p>I am {user.age} years old</p>
-					<h3>{user.about}</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-						assumenda deserunt dignissimos doloremque eos ipsam laboriosam
-						laborum, magni, mollitia nisi quibusdam, quo repellendus sequi totam
-						voluptate. Ipsa nisi pariatur quia.
-					</p>
-					<h3>I wanna tell you about my skills</h3>
+					<h4>{user.about}</h4>
+					<h2>I want to tell you about my skills</h2>
 					<ul className={style.elements}>
 						{user.skills.map((skill) => (
 							<li key={skill.name} className={style.element}>
-								<Progress {...skill} type='circle'/>
+								<Progress {...skill} type="circle" />
 							</li>
 						))}
 					</ul>
