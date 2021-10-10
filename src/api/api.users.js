@@ -5,12 +5,12 @@ const FACEBOOK = 'https://www.facebook.com/'
 const role = {
 	teamLead: {
 		_id: '1',
-		content: 'Тимлид',
+		content: 'Team Leader',
 		color: 'danger'
 	},
 	frontend: {
 		_id: '2',
-		content: 'Front-end разработчик',
+		content: 'Front-end Developer',
 		color: 'success'
 	}
 }
@@ -20,10 +20,10 @@ const users = [
 		_id: '1',
 		firstName: 'Daniiel',
 		lastName: 'Kondratiuk',
-		about: 'Lorem ipsum',
+		about: 'Currently I am training as a web developer at WebForse3 School in Strasbourg. During my studies, I mastered the work of HTML, CSS, Javascript, PHP, SQL. I met with WordPress, Ionic and Angular. Studied Symfony more fundamentally. Moreover, I am currently studying React on my own. I wish to find my first job as a web developer. I am dynamic, curious, Id like to get a new piece of knowledge. Sociable and easy-going. I quickly integrate into the team. I like what I am doingn my own.',
 		age: 26,
 		role: role.teamLead,
-		avatar: 'https://picsum.photos/200/200',
+		avatar: '../assets/daniel/daniel.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'daniielkondratiuk' },
 			{ name: 'linkedin', url: LINKEDIN_URL + 'daniel-kondratiuk-5b51551a2/' },
@@ -41,11 +41,11 @@ const users = [
 	{
 		_id: '2',
 		firstName: 'Natalia',
-		lastName: 'Schermann',
-		about: 'Lorem ipsum',
+		lastName: 'Zhelonkina',
+		about: 'I have been studying web development for about 2 years and have a strong desire to work and develop in this field.Im looking for a creative hard-skill team to work with and together get better',
 		age: 16,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/200/200',
+		avatar: '../assets/natalia/nat.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'natella2902/' },
 			{ name: 'linkedin', url: LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' },
@@ -86,11 +86,11 @@ const users = [
 	{
 		_id: '4',
 		firstName: 'Alex',
-		lastName: 'Defo',
-		about: 'Lorem ipsum',
-		age: 69,
+		lastName: 'Tukarev',
+		about: 'Hello. I am a Front-end developer with experience in creating a SPA with React/Redux/TypeScript/HTML/CSS. In my free time, I solve problems oncodewars, delve into familiar ones and study new technologies,study C++. , I plan to study Node.js and learning English. Inthe future, I see myself as a Full-stack Developer. I am ready to consider proposals for full-time or project employment. ' ,
+		age: 30,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/200/200',
+		avatar: '../assets/alex/alex.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
 			{ name: 'linkedin', url: LINKEDIN_URL + 'aleksey-tukarev/' }
@@ -108,11 +108,10 @@ const users = [
 		_id: '5',
 		firstName: 'Ilya',
 		lastName: 'Targaev',
-		about:
-			'Целеустремленный, активный, ответственный, коммуникабельный, исполнительный, стрессоустойчивый, доброжелательный. Владею грамотной речью и умею работать в команде.',
+		about: 'Purposeful, active, responsible, sociable, executive, stress-resistant, friendly. I have a competent speech and know how to work in a team.',
 		age: 26,
 		role: role.frontend,
-		avatar: '../assets/targaev/photo-1.jpeg',
+		avatar: '../assets/targaev/Iliya.png',
 		socials: [
 			{
 				name: 'github',

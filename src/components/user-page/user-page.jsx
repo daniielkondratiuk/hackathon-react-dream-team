@@ -33,8 +33,11 @@ const UserPage = ({ user }) => {
 						My name is {user.firstName} {user.lastName}
 					</h2>
 					<p>I am {user.age} years old</p>
-					<h4>{user.about}</h4>
-					<h2>I want to tell you about my skills</h2>
+					<h3>About me</h3>
+					<p>
+						{user.about}
+					</p>
+					<h3>I wanna tell you about my skills</h3>
 					<ul className={style.elements}>
 						{user.skills.map((skill) => (
 							<li key={skill.name} className={style.element}>
