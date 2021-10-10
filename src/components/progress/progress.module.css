@@ -1,33 +1,33 @@
 .base {
-    color: red;
+	color: red;
 }
 
 .skillRow {
-    position: relative;
+	position: relative;
 }
 
 .skillShape {
-    width: 8.4375rem;
-    height: 8.4375rem;
-    fill: transparent;
-    color: teal;
+	width: 8.4375rem;
+	height: 8.4375rem;
+	fill: transparent;
+	color: teal;
 }
 
 .skillCircleAbove {
-    stroke: #464d62;
-    stroke-width: .625rem;
-    opacity: .5;
+	stroke: #464d62;
+	stroke-width: 0.625rem;
+	opacity: 0.5;
 }
 
 .skillCircleUnder {
-    stroke-width: .9375rem;
+	stroke-width: 0.9375rem;
 }
 
 .skillTitle {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    Left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }

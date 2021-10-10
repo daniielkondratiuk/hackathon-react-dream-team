@@ -26,7 +26,13 @@ const users = [
 				link: ''
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		skills: [
+			{ name: 'HTML', percent: 95 },
+			{ name: 'CSS', percent: 30 },
+			{ name: 'JavaScript', percent: 49 },
+			{ name: 'ReactJS', percent: 75 },
+			{ name: 'NodeJS', percent: 10 }
+		],
 		favorite: false
 	},
 	{
@@ -43,7 +49,13 @@ const users = [
 				link: ''
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		skills: [
+			{ name: 'HTML', percent: 95 },
+			{ name: 'CSS', percent: 30 },
+			{ name: 'JavaScript', percent: 49 },
+			{ name: 'ReactJS', percent: 75 },
+			{ name: 'NodeJS', percent: 10 }
+		],
 		favorite: false
 	},
 	{
@@ -60,7 +72,13 @@ const users = [
 				link: ''
 			}
 		],
-	    skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		skills: [
+			{ name: 'HTML', percent: 95 },
+			{ name: 'CSS', percent: 30 },
+			{ name: 'JavaScript', percent: 49 },
+			{ name: 'ReactJS', percent: 75 },
+			{ name: 'NodeJS', percent: 10 }
+		],
 		favorite: false
 	},
 	{
@@ -77,14 +95,21 @@ const users = [
 				link: ''
 			}
 		],
-        skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		skills: [
+			{ name: 'HTML', percent: 95 },
+			{ name: 'CSS', percent: 30 },
+			{ name: 'JavaScript', percent: 49 },
+			{ name: 'ReactJS', percent: 75 },
+			{ name: 'NodeJS', percent: 10 }
+		],
 		favorite: false
 	},
 	{
 		_id: '5',
 		firstName: 'Ilya',
 		lastName: 'Targaev',
-		about: 'Целеустремленный, активный, ответственный, коммуникабельный, исполнительный, стрессоустойчивый, доброжелательный. Владею грамотной речью и умею работать в команде.',
+		about:
+			'Целеустремленный, активный, ответственный, коммуникабельный, исполнительный, стрессоустойчивый, доброжелательный. Владею грамотной речью и умею работать в команде.',
 		age: 26,
 		role: role.frontend,
 		avatar: '../assets/targaev/photo-1.jpeg',
@@ -94,7 +119,13 @@ const users = [
 				link: 'https://github.com/ilya1910'
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		skills: [
+			{ name: 'HTML', percent: 95 },
+			{ name: 'CSS', percent: 30 },
+			{ name: 'JavaScript', percent: 49 },
+			{ name: 'ReactJS', percent: 75 },
+			{ name: 'NodeJS', percent: 10 }
+		],
 		favorite: false
 	}
 ]

@@ -46,7 +46,7 @@ const App = () => {
 			return usersFavorite
 		})
 		if (usersFavorite) {
-			usersFavorite = usersFavorite.filter(user => user.favorite !== false)
+			usersFavorite = usersFavorite.filter((user) => user.favorite !== false)
 		}
 		return localStorage.setItem('usersFavorite', JSON.stringify(usersFavorite))
 	}
@@ -67,10 +67,13 @@ const App = () => {
 							/>
 						)}
 					/>
-					<Route path="/favorite-users" exact render={() => (
-						<FavoriteUsers
-							handleToggleFavorite={handleToggleFavorite}
-						/>)} />
+					<Route
+						path="/favorite-users"
+						exact
+						render={() => (
+							<FavoriteUsers handleToggleFavorite={handleToggleFavorite} />
+						)}
+					/>
 					<Route
 						path="/:userId"
 						exact

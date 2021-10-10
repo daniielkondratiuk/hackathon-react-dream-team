@@ -30,7 +30,7 @@ const View = ({ users, handleClick, handleToggleFavorite }) =>
 					onClick={() => handleToggleFavorite(user._id)}
 					className="btn btn-warning position-absolute end-0"
 				>
-					{user.favorite ? <i className="bi bi-star-fill" /> : <i className="bi bi-star" /> }
+					{user.favorite ? <i className="bi bi-star-fill" /> : <i className="bi bi-star" />}
 				</button>
 				<div className="card-body">
 					<h5 className="card-title">
