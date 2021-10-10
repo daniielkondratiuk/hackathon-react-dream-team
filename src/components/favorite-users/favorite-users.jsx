@@ -13,7 +13,7 @@ const FavoriteUsers = ({ handleToggleFavorite }) => {
 	const handleClick = (id) => {
 		history.push(id)
 	}
-
+	if (users.length === 0) return <h1 className="ms-2">Нет избранных</h1>
 	return (
 		<UsersList
 			users={users}

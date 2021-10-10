@@ -50,8 +50,7 @@ const users = [
 		avatar: '../assets/natalia/nat.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'natella2902/' },
-			{ name: 'linkedin', url: LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' },
-			{ name: 'facebook', url: FACEBOOK + 'denis.saberov.37' }
+			{ name: 'linkedin', url: LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -95,7 +94,7 @@ const users = [
 		roles: [role.frontend],
 		avatar: '../assets/alex/alex.png',
 		socials: [
-			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
+			{ name: 'github', url: GITHUB_URL + 'Oreda-Z' },
 			{ name: 'linkedin', url: LINKEDIN_URL + 'aleksey-tukarev/' }
 		],
 		skills: [
