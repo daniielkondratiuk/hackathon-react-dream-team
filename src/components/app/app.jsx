@@ -33,20 +33,22 @@ const App = () => {
 				return user
 			})
 		)
-		const usersFavoriteRaw = localStorage.getItem('usersFavorite')
-		let usersFavorite = JSON.parse(usersFavoriteRaw)
+		localStorage.setItem('usersFavorite', JSON.stringify([]))
+		let usersFavorite = []
 		users.map((user) => {
 			if (user.favorite === true) {
-				if (usersFavorite._id !== id) {
+				if (usersFavorite === []) {
+					usersFavorite = [user]
+				} else {
 					usersFavorite = [...usersFavorite, user]
 				}
 			}
-			usersFavorite.filter(user => user.favorite !== false)
-			return localStorage.setItem(
-				'usersFavorite',
-				JSON.stringify(usersFavorite)
-			)
+			return usersFavorite
 		})
+		if (usersFavorite) {
+			usersFavorite = usersFavorite.filter(user => user.favorite !== false)
+		}
+		return localStorage.setItem('usersFavorite', JSON.stringify(usersFavorite))
 	}
 	if (!users) return null
 	return (
