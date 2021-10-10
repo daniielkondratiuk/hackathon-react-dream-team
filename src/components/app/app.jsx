@@ -55,7 +55,7 @@ const App = () => {
 		<>
 			<Router>
 				<Navbar />
-				<Breadcrumbs />
+				<Breadcrumbs users={users} />
 				<Switch>
 					<Route
 						path="/"
