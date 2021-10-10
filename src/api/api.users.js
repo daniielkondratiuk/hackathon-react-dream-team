@@ -1,3 +1,7 @@
+const GITHUB_URL = 'https://github.com/'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/'
+const FACEBOOK = 'https://www.facebook.com/'
+
 const role = {
 	teamLead: {
 		_id: '1',
@@ -21,10 +25,9 @@ const users = [
 		role: role.teamLead,
 		avatar: '../assets/daniel/daniel.png',
 		socials: [
-			{
-				name: 'GitHub',
-				link: ''
-			}
+			{ name: 'github', url: GITHUB_URL + 'daniielkondratiuk' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'daniel-kondratiuk-5b51551a2/' },
+			{ name: 'facebook', url: FACEBOOK + 'danielkondratiuk95' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -44,10 +47,9 @@ const users = [
 		role: role.frontend,
 		avatar: '../assets/natalia/nat.png',
 		socials: [
-			{
-				name: 'GitHub',
-				link: ''
-			}
+			{ name: 'github', url: GITHUB_URL + 'natella2902/' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' },
+			{ name: 'facebook', url: FACEBOOK + 'denis.saberov.37' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -61,16 +63,16 @@ const users = [
 	{
 		_id: '3',
 		firstName: 'Denis',
-		lastName: 'Monet',
-		about: 'Lorem ipsum',
-		age: 36,
+		lastName: 'Saberov',
+		about:
+			'Hello, my name is Denis, Im a JavaScript developer. I have knowledge of such technologies as HTML&CSS/JavaScript/React/Redux/Webpack and some basic knowledge of Node.js.Every day I do my best to improve my skills.',
+		age: 26,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/200/200',
+		avatar: '../assets/targaev/denisSaberov.jpg',
 		socials: [
-			{
-				name: 'GitHub',
-				link: ''
-			}
+			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'setredeyes/' },
+			{ name: 'facebook', url: FACEBOOK + 'denis.saberov.37' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -90,10 +92,8 @@ const users = [
 		role: role.frontend,
 		avatar: '../assets/alex/alex.png',
 		socials: [
-			{
-				name: 'GitHub',
-				link: ''
-			}
+			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'aleksey-tukarev/' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -114,8 +114,8 @@ const users = [
 		avatar: '../assets/targaev/Iliya.png',
 		socials: [
 			{
-				name: 'GitHub',
-				link: 'https://github.com/ilya1910'
+				name: 'github',
+				url: GITHUB_URL + 'ilya1910'
 			}
 		],
 		skills: [

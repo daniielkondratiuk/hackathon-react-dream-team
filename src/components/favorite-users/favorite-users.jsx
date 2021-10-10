@@ -15,13 +15,11 @@ const FavoriteUsers = ({ handleToggleFavorite }) => {
 	}
 
 	return (
-		<div className="d-flex justify-content-around flex-wrap">
-			<UsersList
-				users={users}
-				handleClick={handleClick}
-				handleToggleFavorite={handleToggleFavorite}
-			/>
-		</div>
+		<UsersList
+			users={users}
+			handleClick={handleClick}
+			handleToggleFavorite={handleToggleFavorite}
+		/>
 	)
 }
 FavoriteUsers.propTypes = {

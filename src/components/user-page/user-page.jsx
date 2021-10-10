@@ -18,10 +18,14 @@ const UserPage = ({ user }) => {
 						/>
 					</div>
 					<ul className={style.socialList}>
-						<li className={style.socialItem}>Git</li>
-						<li className={style.socialItem}>VK</li>
-						<li className={style.socialItem}>Facebook</li>
-						<li className={style.socialItem}>Insta</li>
+						{user.socials.map((social) => (
+							<li key={social.name} className="me-2 ">
+								<a href={social.url} className="text-decoration-none">
+									<i className={`bi bi-${social.name} me-1 `} />
+									<span>{social.name}</span>
+								</a>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className={style.itemSec}>
@@ -37,7 +41,7 @@ const UserPage = ({ user }) => {
 					<ul className={style.elements}>
 						{user.skills.map((skill) => (
 							<li key={skill.name} className={style.element}>
-								<Progress {...skill} type='circle'/>
+								<Progress {...skill} type="circle" />
 							</li>
 						))}
 					</ul>
