@@ -19,14 +19,15 @@ const users = [
 		about: 'Lorem ipsum',
 		age: 26,
 		role: role.teamLead,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: 'https://picsum.photos/200/200',
 		socials: [
 			{
 				name: 'GitHub',
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '2',
@@ -35,14 +36,15 @@ const users = [
 		about: 'Lorem ipsum',
 		age: 16,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: 'https://picsum.photos/200/200',
 		socials: [
 			{
 				name: 'GitHub',
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '3',
@@ -51,14 +53,15 @@ const users = [
 		about: 'Lorem ipsum',
 		age: 36,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: 'https://picsum.photos/200/200',
 		socials: [
 			{
 				name: 'GitHub',
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+	    skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '4',
@@ -67,14 +70,15 @@ const users = [
 		about: 'Lorem ipsum',
 		age: 69,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: 'https://picsum.photos/200/200',
 		socials: [
 			{
 				name: 'GitHub',
 				link: ''
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+        skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '5',
@@ -90,10 +94,10 @@ const users = [
 				link: 'https://github.com/ilya1910'
 			}
 		],
-		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	}
 ]
-
 const getAllUsers = () =>
 	new Promise((resolve) => {
 		setTimeout(() => resolve(users), 300)
