@@ -9,7 +9,6 @@ const UserPage = ({ user }) => {
 		<>
 			<div className={style.item}>
 				<div className={style.itemFirst}>
-					<Badge color={user.role.color} content={user.role.content} />
 					<div className={style.itemImg}>
 						<img
 							className={style.itemPic}
@@ -32,11 +31,11 @@ const UserPage = ({ user }) => {
 					<h2 className={style.color}>
 						My name is {user.firstName} {user.lastName}
 					</h2>
+					<div>{user.roles.map(role => <Badge key={role._id} color={role.color} content={role.content} />)}</div>
+
 					<p>I am {user.age} years old</p>
 					<h3>About me</h3>
-					<p>
-						{user.about}
-					</p>
+					<p>{user.about}</p>
 					<h3>I wanna tell you about my skills</h3>
 					<ul className={style.elements}>
 						{user.skills.map((skill) => (

@@ -11,7 +11,10 @@ const Progress = ({ name, percent, type }) => {
 		return (
 			<>
 				<label htmlFor="file">{name}</label>
-				<progress id="file" max="100" value={percent}> {percent}%</progress>
+				<progress id="file" max="100" value={percent}>
+					{' '}
+					{percent}%
+				</progress>
 			</>
 		)
 	}
@@ -24,12 +27,7 @@ const Progress = ({ name, percent, type }) => {
 							<stop offset="0%" stopColor="gold" />
 							<stop offset="100%" stopColor="teal" />
 						</linearGradient>
-						<circle
-							cx="50"
-							cy="50"
-							r="40"
-							className={style.skillCircleAbove}
-						/>
+						<circle cx="50" cy="50" r="40" className={style.skillCircleAbove} />
 						<circle
 							cx="50"
 							cy="50"

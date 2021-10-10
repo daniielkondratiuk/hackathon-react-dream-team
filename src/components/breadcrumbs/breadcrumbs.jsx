@@ -21,7 +21,7 @@ const Breadcrumbs = ({ users }) => {
 		<nav aria-label="breadcrumb">
 			<ol className="breadcrumb ms-2 mt-2">
 				<li className="breadcrumb-item">
-					<i className="bi bi-house-door me-1"/>
+					<i className="bi bi-house-door me-1" />
 					<Link to="/">Главная</Link>
 				</li>
 				{pathnames.map((name, index) => {
@@ -29,13 +29,7 @@ const Breadcrumbs = ({ users }) => {
 					const isLast = index === pathnames.length - 1
 					return (
 						<li key={index} className="breadcrumb-item word text-nowrap">
-							{isLast
-								? (
-									<p>{renderCrumb(name)}</p>
-								)
-								: (
-									<Link to={routeTo}>{renderCrumb(name)}</Link>
-								)}
+							{isLast ? <p>{renderCrumb(name)}</p> : <Link to={routeTo}>{renderCrumb(name)}</Link> }
 						</li>
 					)
 				})}
