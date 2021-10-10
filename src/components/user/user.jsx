@@ -14,7 +14,7 @@ const User = ({ users, match }) => {
 	if (!user) return null
 	return		<>
 		<h1>{user.firstName}</h1>
-		<Badge role={user.role} />
+		<Badge color={user.role.color} content={user.role.content} />
 	</>
 }
 

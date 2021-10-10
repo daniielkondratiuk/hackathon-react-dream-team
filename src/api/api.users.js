@@ -1,13 +1,13 @@
 const role = {
 	teamLead: {
 		_id: '1',
-		name: 'Тимлид',
+		content: 'Тимлид',
 		color: 'danger'
 	},
 	frontend: {
 		_id: '2',
-		name: 'Front-end разработчик',
-		color: 'primary'
+		content: 'Front-end разработчик',
+		color: 'success'
 	}
 }
 
@@ -80,14 +80,14 @@ const users = [
 		_id: '5',
 		firstName: 'Ilya',
 		lastName: 'Targaev',
-		about: 'Lorem ipsum',
+		about: 'Целеустремленный, активный, ответственный, коммуникабельный, исполнительный, стрессоустойчивый, доброжелательный. Владею грамотной речью и умею работать в команде.',
 		age: 26,
 		role: role.frontend,
-		avatar: 'https://picsum.photos/250/200',
+		avatar: '../assets/targaev/photo-1.jpeg',
 		socials: [
 			{
 				name: 'GitHub',
-				link: ''
+				link: 'https://github.com/ilya1910'
 			}
 		],
 		skills: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS']
