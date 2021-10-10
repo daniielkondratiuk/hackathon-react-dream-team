@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import './badge.css'
 
-const Badge = ({ color, content }) => {
-	return <h3>Badge</h3>
-}
+const Badge = ({ color, content }) => (
+	<span className={`badge badge-margin bg-${color}`}>{content}</span>
+)
 
 Badge.propTypes = {
 	color: PropTypes.string.isRequired,

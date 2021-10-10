@@ -3,15 +3,24 @@ import PropTypes from 'prop-types'
 
 import './button.css'
 
-const Button = ({ color, handleClick, name, type }) => {
-	return <button>button</button>
+const Button = ({ color, handleClick, name, type, classes }) => {
+	const btnType = type === 'rounded' ? '' : 'rounded-0'
+	return (
+		<button
+			onClick={ () => handleClick()}
+			className={`btn btn-${color} ${btnType} ${classes}`}
+		>
+			{name}
+		</button>
+	)
 }
 
 Button.propTypes = {
 	color: PropTypes.string.isRequired,
 	handleClick: PropTypes.func.isRequired,
-	name: PropTypes.string.isRequired,
-	type: PropTypes.string
+	name: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+	type: PropTypes.string,
+	classes: PropTypes.string
 }
 
 export default Button
