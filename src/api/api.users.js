@@ -1,4 +1,6 @@
-require('dotenv').config()
+const GITHUB_URL = 'https://github.com/'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/'
+const FACEBOOK = 'https://www.facebook.com/'
 
 const role = {
 	teamLead: {
@@ -24,9 +26,9 @@ const users = [
 		roles: [role.teamLead, role.frontend],
 		avatar: '../assets/daniel/daniel.png',
 		socials: [
-			{ name: 'github', url: process.env.GITHUB_URL + 'daniielkondratiuk' },
-			{ name: 'linkedin', url: process.env.LINKEDIN_URL + 'daniel-kondratiuk-5b51551a2/' },
-			{ name: 'facebook', url: process.env.FACEBOOK + 'danielkondratiuk95' }
+			{ name: 'github', url: GITHUB_URL + 'daniielkondratiuk' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'daniel-kondratiuk-5b51551a2/' },
+			{ name: 'facebook', url: FACEBOOK + 'danielkondratiuk95' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -47,9 +49,9 @@ const users = [
 		roles: [role.frontend],
 		avatar: '../assets/natalia/nat.png',
 		socials: [
-			{ name: 'github', url: process.env.GITHUB_URL + 'natella2902/' },
-			{ name: 'linkedin', url: process.env.LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' },
-			{ name: 'facebook', url: process.env.FACEBOOK + 'denis.saberov.37' }
+			{ name: 'github', url: GITHUB_URL + 'natella2902/' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'natalia-zhelonkina-8242421b2/' },
+			{ name: 'facebook', url: FACEBOOK + 'denis.saberov.37' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -68,11 +70,11 @@ const users = [
 			'Hello, my name is Denis, Im a JavaScript developer. I have knowledge of such technologies as HTML&CSS/JavaScript/React/Redux/Webpack and some basic knowledge of Node.js.Every day I do my best to improve my skills.',
 		age: 26,
 		roles: [role.frontend],
-		avatar: '../assets/targaev/denisSaberov.jpg',
+		avatar: '../assets/denis/denis.jpg',
 		socials: [
-			{ name: 'github', url: process.env.GITHUB_URL + 'SetRedEyes' },
-			{ name: 'linkedin', url: process.env.LINKEDIN_URL + 'setredeyes/' },
-			{ name: 'facebook', url: process.env.FACEBOOK + 'denis.saberov.37' }
+			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'setredeyes/' },
+			{ name: 'facebook', url: FACEBOOK + 'denis.saberov.37' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -93,8 +95,8 @@ const users = [
 		roles: [role.frontend],
 		avatar: '../assets/alex/alex.png',
 		socials: [
-			{ name: 'github', url: process.env.GITHUB_URL + 'SetRedEyes' },
-			{ name: 'linkedin', url: process.env.LINKEDIN_URL + 'aleksey-tukarev/' }
+			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
+			{ name: 'linkedin', url: LINKEDIN_URL + 'aleksey-tukarev/' }
 		],
 		skills: [
 			{ name: 'HTML', percent: 95 },
@@ -113,11 +115,11 @@ const users = [
 			'Purposeful, active, responsible, sociable, executive, stress-resistant, friendly. I have a competent speech and know how to work in a team.',
 		age: 26,
 		roles: [role.frontend],
-		avatar: '../assets/targaev/Iliya.png',
+		avatar: '../assets/iliya/iliya.png',
 		socials: [
 			{
 				name: 'github',
-				url: process.env.GITHUB_URL + 'ilya1910'
+				url: GITHUB_URL + 'ilya1910'
 			}
 		],
 		skills: [
