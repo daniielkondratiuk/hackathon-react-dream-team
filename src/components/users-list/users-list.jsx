@@ -48,7 +48,7 @@ const View = ({ users, handleClick, favorite, setFavorite }) =>
 				<div className="d-flex justify-content-around">
 					<ol>
 						{user.skills.map((skill) => (
-							<li key={skill}>{skill}</li>
+							<li key={skill.name}>{skill.name}</li>
 						))}
 					</ol>
 					<ul>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
-import api from '../../api'
-import Badge from '../badge'
+import PropTypes from 'prop-types';
+import api from '../../api';
+import UserPage from "../user-page/user-page";
 
 const User = ({ users, match }) => {
 	const [user, setUser] = useState(null)
@@ -12,9 +12,8 @@ const User = ({ users, match }) => {
 		api.getUserById(userId).then(setUser)
 	}, [user])
 	if (!user) return null
-	return		<>
-		<h1>{user.firstName}</h1>
-		<Badge role={user.role} />
+	return <>
+		{ user ? <UserPage user={user} /> : <h2>User not found</h2> }
 	</>
 }
 
