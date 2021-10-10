@@ -40,7 +40,7 @@ const UserPage = ({ user }) => {
 					<ul className={style.elements}>
 						{user.skills.map((skill) => (
 							<li key={skill.name} className={style.element}>
-								<Progress {...skill} />
+								<Progress {...skill} type='circle'/>
 							</li>
 						))}
 					</ul>
