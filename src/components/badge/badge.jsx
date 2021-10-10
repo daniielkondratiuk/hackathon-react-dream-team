@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import './badge.css'
 
 const Badge = ({ color, content }) => (
-	<span className={`badge badge-margin bg-${color} me-2`}>{content}</span>
+	<span className={`badge badge-margin me-2 bg-${color}`}>{content}</span>
 )
 
 Badge.propTypes = {
