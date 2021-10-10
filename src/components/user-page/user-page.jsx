@@ -5,11 +5,10 @@ import './user-page.module.css';
 import Badge from "../badge";
 
 const UserPage = ({user}) => {
-    console.log(user.skills)
     return <>
         <div className={style.item}>
             <div className={style.itemFirst}>
-                <Badge role={user.role} />
+                <Badge color={user.role.color} content={user.role.content}/>
                 <div className={style.itemImg}>
                     <img className={style.itemPic} src={user.avatar} alt={`Foto ${user.firstName}`}/>
                 </div>
