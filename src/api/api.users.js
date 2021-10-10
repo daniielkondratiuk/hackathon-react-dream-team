@@ -26,7 +26,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }]
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '2',
@@ -42,7 +43,8 @@ const users = [
 				link: ''
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }]
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '3',
@@ -58,7 +60,8 @@ const users = [
 				link: ''
 			}
 		],
-	    skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }]
+	    skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '4',
@@ -74,7 +77,8 @@ const users = [
 				link: ''
 			}
 		],
-        skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }]
+        skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	},
 	{
 		_id: '5',
@@ -90,10 +94,10 @@ const users = [
 				link: ''
 			}
 		],
-		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }]
+		skills: [{ name: 'HTML', percent: 95 }, { name: 'CSS', percent: 30 }, { name: 'JavaScript', percent: 49 }, { name: 'ReactJS', percent: 75 }, { name: 'NodeJS', percent: 10 }],
+		favorite: false
 	}
 ]
-
 const getAllUsers = () =>
 	new Promise((resolve) => {
 		setTimeout(() => resolve(users), 300)
