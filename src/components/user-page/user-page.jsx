@@ -29,12 +29,9 @@ const UserPage = ({ user }) => {
 						My name is {user.firstName} {user.lastName}
 					</h2>
 					<p>I am {user.age} years old</p>
-					<h3>{user.about}</h3>
+					<h3>About me</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-						assumenda deserunt dignissimos doloremque eos ipsam laboriosam
-						laborum, magni, mollitia nisi quibusdam, quo repellendus sequi totam
-						voluptate. Ipsa nisi pariatur quia.
+						{user.about}
 					</p>
 					<h3>I wanna tell you about my skills</h3>
 					<ul className={style.elements}>
