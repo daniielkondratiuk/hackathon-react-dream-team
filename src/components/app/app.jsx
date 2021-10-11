@@ -13,6 +13,7 @@ import User from '../user'
 import Breadcrumbs from '../breadcrumbs'
 
 import './app.css'
+import Welcome from '../welcome/welcome'
 
 const App = () => {
 	const [users, setUsers] = useState(null)
@@ -56,17 +57,18 @@ const App = () => {
 			<Router>
 				<Navbar />
 				<Breadcrumbs users={users} />
+				<Route path="/" exact component={Welcome}/>
+				<Route
+					path="/"
+					exact
+					render={() => (
+						<UsersList
+							users={users}
+							handleToggleFavorite={handleToggleFavorite}
+						/>
+					)}
+				/>
 				<Switch>
-					<Route
-						path="/"
-						exact
-						render={() => (
-							<UsersList
-								users={users}
-								handleToggleFavorite={handleToggleFavorite}
-							/>
-						)}
-					/>
 					<Route
 						path="/favorite-users"
 						exact

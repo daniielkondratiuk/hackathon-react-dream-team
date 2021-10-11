@@ -5,3 +5,7 @@
 .welcome h1 {
     color: tomato;
 }
+.welcome p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}

@@ -4,7 +4,7 @@ import './welcome.css'
 
 const Welcome = () => {
 	return (
-		<div className='welcome'>
+		<div className='welcome bg-light'>
 			<h2>Hackathon 2 - Group 9</h2>
 			<h1>Welcome to our Website</h1>
 			<p>

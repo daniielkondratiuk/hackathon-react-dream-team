@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom'
 import './users-list.css'
 import Button from '../button'
 import Badge from '../badge'
-import Welcome from '../welcome/welcome'
 
 const UsersList = ({ users, handleToggleFavorite }) => {
 	const history = useHistory()
@@ -15,7 +14,6 @@ const UsersList = ({ users, handleToggleFavorite }) => {
 
 	return (
 		<div className="user-list mx-auto bg-light ">
-			<Welcome/>
 			<div className="col-10 mx-auto d-flex justify-content-around flex-wrap">
 				<View
 					users={users}
