@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom'
 
 import './users-list.css'
 import Button from '../button'
+import Badge from '../badge'
+import Welcome from '../welcome/welcome'
 
 const UsersList = ({ users, handleToggleFavorite }) => {
 	const history = useHistory()
@@ -12,12 +14,16 @@ const UsersList = ({ users, handleToggleFavorite }) => {
 	}
 
 	return (
-		<div className="d-flex justify-content-around flex-wrap">
-			<View
-				users={users}
-				handleClick={handleClick}
-				handleToggleFavorite={handleToggleFavorite}
-			/>
+		<div className="user-list mx-auto bg-light ">
+			<Welcome/>
+			<div className="col-10 mx-auto d-flex justify-content-around flex-wrap">
+				<View
+					users={users}
+					handleClick={handleClick}
+					handleToggleFavorite={handleToggleFavorite}
+				/>
+			</div>
+
 		</div>
 	)
 }
@@ -25,7 +31,7 @@ const UsersList = ({ users, handleToggleFavorite }) => {
 const View = ({ users, handleClick, handleToggleFavorite }) =>
 	users.map((user) => {
 		return (
-			<div key={user._id} className="card my-2 position-relative">
+			<div key={user._id} className="user-list__card card my-2 position-relative">
 				<img className="card-img-top" src={user.avatar} alt="Card ok cap" />
 				<Button
 					color={'warning'}
@@ -37,6 +43,7 @@ const View = ({ users, handleClick, handleToggleFavorite }) =>
 					<h5 className="card-title">
 						{user.firstName} {user.lastName}
 					</h5>
+					<div className="col-12">{user.roles.map(role => <Badge key={role._id} color={role.color} content={role.content} />)}</div>
 				</div>
 				<Button
 					color={'primary'}
@@ -44,18 +51,6 @@ const View = ({ users, handleClick, handleToggleFavorite }) =>
 					handleClick={() => handleClick(user._id)}
 					classes="d-block w-100"
 				/>
-				<div className="d-flex justify-content-around">
-					<ol>
-						{user.skills.map((skill) => (
-							<li key={skill.name}>{skill.name}</li>
-						))}
-					</ol>
-					<ul>
-						{user.socials.map((social) => (
-							<li key={social.name}>{social.name}</li>
-						))}
-					</ul>
-				</div>
 			</div>
 		)
 	})

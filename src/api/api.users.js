@@ -12,6 +12,26 @@ const role = {
 		_id: '2',
 		content: 'Front-end Developer',
 		color: 'success'
+	},
+	fullstack: {
+		_id: '3',
+		content: 'Fullstack Developer',
+		color: 'primary'
+	},
+	backend: {
+		_id: '3',
+		content: 'Backend Developer',
+		color: 'dark'
+	},
+	cPlus: {
+		_id: '5',
+		content: 'C++ Developer',
+		color: 'warning'
+	},
+	design: {
+		_id: '6',
+		content: 'Web Designer',
+		color: 'info'
 	}
 }
 
@@ -23,7 +43,7 @@ const users = [
 		about:
 			'Currently I am training as a web developer at WebForse3 School in Strasbourg. During my studies, I mastered the work of HTML, CSS, Javascript, PHP, SQL. I met with WordPress, Ionic and Angular. Studied Symfony more fundamentally. Moreover, I am currently studying React on my own. I wish to find my first job as a web developer. I am dynamic, curious, Id like to get a new piece of knowledge. Sociable and easy-going. I quickly integrate into the team. I like what I am doingn my own.',
 		age: 26,
-		roles: [role.teamLead, role.frontend],
+		roles: [role.teamLead, role.frontend, role.fullstack],
 		avatar: '../assets/daniel/daniel.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'daniielkondratiuk' },
@@ -46,7 +66,7 @@ const users = [
 		about:
 			'I have been studying web development for about 2 years and have a strong desire to work and develop in this field.Im looking for a creative hard-skill team to work with and together get better',
 		age: 16,
-		roles: [role.frontend],
+		roles: [role.frontend, role.design, role.fullstack],
 		avatar: '../assets/natalia/nat.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'natella2902/' },
@@ -68,7 +88,7 @@ const users = [
 		about:
 			'Hello, my name is Denis, Im a JavaScript developer. I have knowledge of such technologies as HTML&CSS/JavaScript/React/Redux/Webpack and some basic knowledge of Node.js.Every day I do my best to improve my skills.',
 		age: 26,
-		roles: [role.frontend],
+		roles: [role.backend, role.frontend],
 		avatar: '../assets/denis/denis.jpg',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'SetRedEyes' },
@@ -91,7 +111,7 @@ const users = [
 		about:
 			'Hello. I am a Front-end developer with experience in creating a SPA with React/Redux/TypeScript/HTML/CSS. In my free time, I solve problems oncodewars, delve into familiar ones and study new technologies,study C++. , I plan to study Node.js and learning English. Inthe future, I see myself as a Full-stack Developer. I am ready to consider proposals for full-time or project employment. ',
 		age: 30,
-		roles: [role.frontend],
+		roles: [role.frontend, role.cPlus],
 		avatar: '../assets/alex/alex.png',
 		socials: [
 			{ name: 'github', url: GITHUB_URL + 'Oreda-Z' },
@@ -113,8 +133,8 @@ const users = [
 		about:
 			'Purposeful, active, responsible, sociable, executive, stress-resistant, friendly. I have a competent speech and know how to work in a team.',
 		age: 26,
-		roles: [role.frontend],
-		avatar: '../assets/iliya/iliya.png',
+		roles: [role.fullstack, role.frontend],
+		avatar: '../assets/iliya/Iliya.png',
 		socials: [
 			{
 				name: 'github',

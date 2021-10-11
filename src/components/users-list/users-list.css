@@ -1,3 +1,7 @@
 .card-img-top {
 	height: 300px;
 }
+
+.user-list__card {
+	width: 300px;
+}
